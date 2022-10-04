@@ -1,21 +1,32 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
-import HelloWorld from '../components/HelloWorld.vue'
-import SimpleText from '../components/SimpleText.vue'
-import BlogHome from '@/components/BlogHome'
-import BlogPost from '@/components/BlogPost'
+import BlogHome from '@/pages/BlogHome'
+import BlogPost from '@/pages/BlogPost'
+import CafeHome from '@/pages/CafeHome'
+import Testing from '@/pages/Testing'
+import About from '@/pages/About'
+import Home from '@/pages/Home'
 
 const router = createRouter({
     history: createWebHistory(),
     routes: [
         {
             path: '/',
-            component: SimpleText,
+            component: Home,
         },
         
         {
             path: '/about',
-            component: HelloWorld,
+            component: About,
+        },
+
+        {
+            path: '/cafehome',
+            component: CafeHome,
+        },
+        {
+            path: '/test',
+            component: Testing
         },
         {
             path: '/blog/',
@@ -25,7 +36,17 @@ const router = createRouter({
             path: '/blog/:slug',
             component: BlogPost,
         }
-    ]
+    ],
+    scrollBehavior(to, from, savedPosition) {
+        console.log(savedPosition)
+        if (savedPosition) {
+            console.log('old')
+            return savedPosition
+          } else {
+            console.log('top')
+            return { top: 0 }
+          }
+    },
 })
 
 export default router

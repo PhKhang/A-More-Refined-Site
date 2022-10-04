@@ -1,8 +1,9 @@
 <template>
+    <Nav></Nav>
     <main>
-        <div v-if="showImg === 'show'" class="imgbox">
+        <p v-if="showImg === 'show'" class="imgbox" >
             <img src="https://papers.co/wallpaper/papers.co-me89-himalaya-sunset-white-mountain-art-36-3840x2400-4k-wallpaper.jpg" alt="">
-        </div>
+        </p>
         
         <h1>{{head}}</h1>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.  Consequatur dolores reiciendis nesciunt deserunt? Aliquam iste ducimus nobis debitis ad expedita beatae voluptatum doloribus, cumque dolor accusamus modi ipsum exercitationem laborum blanditiis voluptas necessitatibus commodi eveniet tempora impedit laudantium nisi esse. Với nhận thức rằng: Việc thừa nhận nhân phẩm vốn có, các quyền bình đẳng và không thể tách rời của mọi thành viên trong gia đình nhân loại là cơ sở cho tự do, công bằng và hoà bình trên thế giới. Earum odio consequatur maxime tempore sint nesciunt rerum, deserunt fugit temporibus! Laudantium, consequuntur assumenda.</p>
@@ -19,11 +20,16 @@
 </template>
 
 <script>
+import Nav from '@/components/Nav'
+
 export default {
-    name: 'SimpletText',
+    name: 'SimpleText',
+    components: {
+        Nav
+    },
     props: {
-        head: {type: String, default: 'Hello'},
-        showImg: {type: String, default: 'show'}
+        head: { type: String, default: 'Hello' },
+        showImg: { type: String, default: 'show' }
     }
 }
 </script>
@@ -34,8 +40,21 @@ export default {
         height: 200px;
         object-fit: cover;
         
-        /* position: initial; */
-        margin-left: -25vw;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
     }
     
+    .imgbox {
+        width: 100%;
+        margin: 10px auto 0px;
+    }
+    
+    main {
+        width: 90vw;
+        max-width: 600px;
+        
+        margin-left: auto;
+        margin-right: auto;
+    }
 </style>
