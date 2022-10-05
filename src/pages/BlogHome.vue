@@ -36,7 +36,7 @@ export default {
       <div id="blog-home">
         <h1>{{ page_title }}</h1>
         <!-- Create `v-for` and apply a `key` for Vue. Here we are using a combination of the slug and index. -->
-        <div v-for="(post,index) in posts" :key="post.slug + '_' + index">
+        <div class="post" v-for="(post,index) in posts" :key="post.slug + '_' + index">
           <router-link :to="'/blog/' + post.slug">
             <article class="media">
               <figure>
@@ -62,7 +62,7 @@ export default {
   width: 100%;
   min-height: 100vh;
   height: auto;
-  background-color: #ecfdf5;
+  background-color: var(--bg);
 }
 
 .content {
@@ -76,10 +76,10 @@ export default {
   background-color: inherit;
 }
 
-#blog-home div {
+#blog-home .post {
   display: inline-block;
 
-  border: solid #42b983;
+  border: solid var(--link);
   border-radius: 10px;
   width: 250px;
   height: 400px;
@@ -87,6 +87,7 @@ export default {
 
   margin: 10px;
   padding: 10px;
+  color: var(--text);
 }
 
 img {

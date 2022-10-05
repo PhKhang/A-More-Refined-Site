@@ -1,12 +1,12 @@
 <template>
   <div class="main">
-      <Nav></Nav>
-      <div class="content">
-          <div class="outer">
-              <div class="inner"></div>
-          </div>
-          <LongText></LongText>
+    <Nav></Nav>
+    <div class="content">
+      <div class="outer">
+        <div class="inner"></div>
       </div>
+      <LongText></LongText>
+    </div>
   </div>
 </template>
 
@@ -17,8 +17,8 @@ import LongText from '@/components/LongText.vue'
 export default {
   name: 'TestPg',
   components: {
-      Nav,
-      LongText
+    Nav,
+    LongText
   }
 }
 </script>
@@ -30,7 +30,7 @@ export default {
   width: 100%;
   min-height: 100%;
   height: auto;
-  background-color: #ecfdf5;
+  background-color: var(--bg);
 }
 
 .content {
@@ -49,6 +49,7 @@ export default {
   width: 80%;
   height: 500px;
 }
+
 .inner {
   background-color: #5f9ea0;
   width: 60%;

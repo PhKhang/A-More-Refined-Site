@@ -4,40 +4,63 @@
         <router-link class="animate__fadeInLeft" to="/about">About</router-link>
         <router-link class="animate__fadeInLeft" to="/test">Test</router-link>
         <router-link class="animate__fadeInLeft" to="/blog">Blogs</router-link>
+
+        <Button icon="pi pi-check" iconPos="right" />
         <!-- <router-link class="animate__fadeInLeft" to="/cafehome">Cafe</router-link> -->
     </nav>
 </template>
 
 <script>
+import Button from "primevue/button";
+import "primevue/resources/themes/lara-dark-teal/theme.css"
+import 'primeicons/primeicons.css'
+
 export default {
-    name: 'NavBar'
+    name: 'NavBar',
+    components: {
+        Button
+    }
 }
 </script>
 
 <style scoped>
+button {
+    width: 100%;
+}
+
 nav {
-        display: flex;
-        flex-direction: column;
-        
-        width: max-content;
-        
-        background-color: aquamarine;
-        padding: 4px;
-        border-radius: 4px;
-        margin: 10px;
-        
-        position: fixed;
-        top: 0;
-        z-index: 99;
-    }
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 60px;
+
+    background-color: var(--bg-nav);
+    backdrop-filter: blur(100px);
+    padding: 4px;
+    border-radius: 4px;
+    border: 2.4px solid var(--link);
+    margin: 10px;
+
+    position: fixed;
+    top: 0;
+    z-index: 99;
+
+    transition: background-color var(--trans-time-l) ease;
+}
+
 a {
     font-weight: 700;
     text-decoration: none;
-    color: #064e3b;
+    color: var(--link);
+    border-bottom: 3px solid transparent;
+
+    transition: color var(--trans-time) ease;
 }
 
 a.router-link-active {
-    border-bottom: 3px solid #064e3b;
+    border-bottom: 3px solid var(--link);
+
+    transition: color var(--trans-time) ease;
 }
 </style>

@@ -1,0 +1,55 @@
+:root {
+    --trans-time: .5s;
+    --trans-time-l: .7s;
+
+    --green0: #ecfdf5;
+    --green1: #d1fae5;
+    --green2: #a7f3d0;
+    --green3: #6ee7b7;
+    --green4: #34d399;
+    --green5: #10b981;
+    --green6: #059669;
+    --green7: #047857;
+    --green8: #065f46;
+    --green9: #064e3b;
+
+    --dgreen0: #f0fdfa;
+    --dgreen1: #ccfbf1;
+    --dgreen2: #99f6e4;
+    --dgreen3: #5eead4;
+    --dgreen4: #2dd4bf;
+    --dgreen5: #14b8a6;
+    --dgreen6: #0d9488;
+    --dgreen7: #0f766e;
+    --dgreen8: #0E4E4A;
+    --dgreen9: #143432;
+
+    --blue: #0084a5;
+    --purple: #a82dd1;
+    --yellow: #fff565;
+
+
+}
+
+.light {
+    --bg: var(--green0);
+    --bg-nav: var(--green1);
+    --bg-dropdown: var(--green1);
+    --text: rgb(0, 20, 7);
+    --link: var(--green9);
+    --border-color: var(--green9);
+}
+
+
+.dark {
+    --bg: var(--dgreen9);
+    --bg-nav: var(--dgreen8);
+    --bg-dropdown: var(--dgreen8);
+    --text: var(--dgreen0);
+    --link: var(--dgreen4);
+    --border-color: var(--dgreen4);
+}
+
+.dark .header {
+    filter: brightness(70%);
+}

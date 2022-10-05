@@ -25,7 +25,7 @@ export default {
     padding: 0;
     margin: 0;
     height: auto;
-    background-color: #ecfdf5;
+    background-color: var(--bg);
 }
 
 .content {

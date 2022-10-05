@@ -1,8 +1,8 @@
 <template>
   <router-view v-slot="{ Component }">
-    <transition name="fade">
-      <component :is="Component" />
-    </transition>
+    <!-- <transition name="fade" mode="out-in"> -->
+    <component :is="Component" />
+    <!-- </transition> -->
   </router-view>
 </template>
 
@@ -15,7 +15,7 @@ export default {
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
 
-html{
+html {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -28,13 +28,19 @@ html{
 
 body {
   margin: 0;
-  background-color: #ecfdf5;
+  background-color: var(--bg);
   /* Fuck, the background-color is too slow, if the the color is different from the .main .content, the old color will flash on fetch */
+  color: var(--text);
+
 }
 
 #app {
   padding: 0;
   margin: 0;
 
+}
+
+a {
+  color: var(--link);
 }
 </style>
