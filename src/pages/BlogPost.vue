@@ -89,15 +89,17 @@ export default {
   margin: 0 auto;
 }
 
-p {
+#blog-post>>>p,
+ul,
+li {
   width: 100%;
+  text-align: justify;
 }
 
-img {
-  min-width: 100%;
-  width: 70vw;
-  height: 200px;
+#blog-post>>>img {
+  max-width: 100%;
   object-fit: cover;
+  border-radius: 4px;
 
   position: relative;
   left: 50%;
