@@ -85,7 +85,7 @@ export default {
 #blog-home .post {
   display: inline-block;
 
-  border: solid var(--link);
+  border: 3px solid var(--link);
   border-radius: 10px;
   width: 250px;
   height: 400px;
