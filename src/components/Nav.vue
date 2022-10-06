@@ -80,4 +80,20 @@ a.router-link-active {
 
     transition: color var(--trans-time) ease;
 }
+
+@media screen and (max-width: 820px) {
+    nav {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+
+    }
+
+}
 </style>
+

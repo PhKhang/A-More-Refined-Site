@@ -31,7 +31,7 @@ export default {
 <template>
   <div class="main">
     <Nav></Nav>
-    <div class="content">
+    <div class="content animate__animated animate__fadeIn">
       <div id="blog-post">
         <h1>{{ post.data.title }}</h1>
         <h4>{{ post.data.author.first_name }} {{ post.data.author.last_name }}</h4>
@@ -49,7 +49,7 @@ export default {
   </div>
 </template>
 
-<style scoped>
+<style>
 .main {
   padding: 0;
   margin: 0;
@@ -60,6 +60,15 @@ export default {
 
   transition: background-color var(--trans-time-l) ease;
 }
+
+@media screen and (max-width: 820px) {
+  .main {
+    padding-top: 52px;
+  }
+
+
+}
+
 
 .content {
   padding: 10px;

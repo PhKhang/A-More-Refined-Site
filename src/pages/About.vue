@@ -28,6 +28,13 @@ export default {
     background-color: var(--bg);
 
     transition: background-color var(--trans-time-l) ease;
+}
+
+@media screen and (max-width: 820px) {
+    .main {
+        padding-top: 52px;
+    }
+
 
 }
 
