@@ -5,7 +5,7 @@
         <router-link class="animate__fadeInLeft" to="/test">Test</router-link>
         <router-link class="animate__fadeInLeft" to="/blog">Blogs</router-link>
 
-        <Button icon="pi pi-check" iconPos="right" />
+        <Button icon="pi pi-check" aria-label="Submit" @click="onclick" />
         <!-- <router-link class="animate__fadeInLeft" to="/cafehome">Cafe</router-link> -->
     </nav>
 </template>
@@ -19,11 +19,27 @@ export default {
     name: 'NavBar',
     components: {
         Button
+    },
+    methods: {
+        onclick() {
+
+
+            if (document.body.classList.replace('dark', 'light')) {
+                console.log('true')
+            } else {
+                document.body.classList.replace('light', 'dark')
+                console.log('false')
+            }
+        }
     }
 }
 </script>
 
 <style scoped>
+.p-button {
+    background-color: var(--link);
+}
+
 button {
     width: 100%;
 }
@@ -31,11 +47,12 @@ button {
 nav {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
+    justify-content: center;
 
     width: 60px;
 
-    background-color: var(--bg-nav);
+    background-color: var(--bg);
     backdrop-filter: blur(100px);
     padding: 4px;
     border-radius: 4px;

@@ -57,6 +57,8 @@ export default {
   min-height: 100vh;
   height: auto;
   background-color: var(--bg);
+
+  transition: background-color var(--trans-time-l) ease;
 }
 
 .content {
@@ -68,6 +70,8 @@ export default {
   max-width: 700px;
   height: fit-content;
   background-color: inherit;
+
+  transition: background-color var(--trans-time-l) ease;
 }
 
 #blog-post {

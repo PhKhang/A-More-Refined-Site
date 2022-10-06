@@ -28,7 +28,7 @@
     --purple: #a82dd1;
     --yellow: #fff565;
 
-
+    --animate-duration: 200ms;
 }
 
 .light {
@@ -52,4 +52,5 @@
 
 .dark .header {
     filter: brightness(70%);
+    transition: all var(--trans-time) ease;
 }

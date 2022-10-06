@@ -1,18 +1,17 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
-    <p>
-      For a guide and recipes on how to configure / customize this project,<br>
-      check out the
-      <a href="https://cli.vuejs.org" target="_blank" rel="noopener">vue-cli documentation</a>.
-    </p>
-    <h3>Installed CLI Plugins</h3>
-    <ul>
-      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-babel" target="_blank"
-          rel="noopener">babel</a></li>
-      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-eslint" target="_blank"
-          rel="noopener">eslint</a></li>
-    </ul>
+
+    <h3>Hello there</h3>
+    <p>My name is Jiji, the cat and I like to create something out of thin air, with <a href="https://cli.vuejs.org"
+        target="_blank" rel="noopener">vue-cli documentation</a> of course.</p>
+
+    <h3>こんにちは</h3>
+    <p>ジジネコ申します。これは僕の新しプロジェクトだよ。</p>
+
+    <h3>大家好</h3>
+    <p>我叫猫。你叫什么名字？</p>
+
     <h3>Essential Links</h3>
     <ul>
       <li><a href="https://vuejs.org" target="_blank" rel="noopener">Core Docs</a></li>

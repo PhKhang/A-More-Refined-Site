@@ -1,7 +1,7 @@
 <template>
-    <div>
+    <div class="main">
         <Nav></Nav>
-        <div class="content">
+        <div class="content animate__animated animate__fadeInUp">
             <LongText></LongText>
         </div>
     </div>
@@ -26,6 +26,9 @@ export default {
     margin: 0;
     height: auto;
     background-color: var(--bg);
+
+    transition: background-color var(--trans-time-l) ease;
+
 }
 
 .content {
@@ -37,5 +40,8 @@ export default {
     max-width: 700px;
     height: fit-content;
     background-color: inherit;
+
+    transition: background-color var(--trans-time-l) ease;
+
 }
 </style>

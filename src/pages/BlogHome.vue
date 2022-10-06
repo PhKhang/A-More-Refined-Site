@@ -36,7 +36,8 @@ export default {
       <div id="blog-home">
         <h1>{{ page_title }}</h1>
         <!-- Create `v-for` and apply a `key` for Vue. Here we are using a combination of the slug and index. -->
-        <div class="post" v-for="(post,index) in posts" :key="post.slug + '_' + index">
+        <div class="post animate__animated animate__fadeInUp" v-for="(post,index) in posts"
+          :key="post.slug + '_' + index">
           <router-link :to="'/blog/' + post.slug">
             <article class="media">
               <figure>
@@ -63,6 +64,9 @@ export default {
   min-height: 100vh;
   height: auto;
   background-color: var(--bg);
+
+  transition: background-color var(--trans-time-l) ease;
+
 }
 
 .content {
@@ -74,6 +78,8 @@ export default {
   max-width: 700px;
   height: fit-content;
   background-color: inherit;
+
+  transition: background-color var(--trans-time-l) ease;
 }
 
 #blog-home .post {
@@ -86,14 +92,16 @@ export default {
   overflow: hidden;
 
   margin: 10px;
-  padding: 10px;
+  padding: 5px;
   color: var(--text);
 }
 
-img {
+.post img {
   width: 100%;
-  height: 100px;
+  height: 200px;
   object-fit: cover;
+
+  border-radius: 5px;
 
   /* position: initial; */
 }
