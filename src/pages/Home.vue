@@ -53,7 +53,7 @@ export default {
 
 @media screen and (max-width: 820px) {
     .main {
-        padding-top: 52px;
+        padding-top: 47px;
     }
 
 

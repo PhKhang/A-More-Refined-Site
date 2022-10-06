@@ -49,7 +49,7 @@ export default {
   </div>
 </template>
 
-<style>
+<style scoped>
 .main {
   padding: 0;
   margin: 0;
@@ -63,7 +63,7 @@ export default {
 
 @media screen and (max-width: 820px) {
   .main {
-    padding-top: 52px;
+    padding-top: 47px;
   }
 
 

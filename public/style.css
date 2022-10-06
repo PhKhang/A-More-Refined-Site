@@ -1,6 +1,6 @@
 :root {
-    --trans-time: .5s;
-    --trans-time-l: .7s;
+    --trans-time: .2s;
+    --trans-time-l: .4s;
     --widthchange: 820px;
 
     --green0: #ecfdf5;
@@ -52,6 +52,6 @@
 }
 
 .dark .header {
-    filter: brightness(70%);
+    filter: brightness(80%);
     transition: all var(--trans-time) ease;
 }
