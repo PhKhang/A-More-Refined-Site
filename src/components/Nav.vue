@@ -92,6 +92,10 @@ a.router-link-active {
         justify-content: space-evenly;
         width: 100%;
 
+        border: none;
+        border-bottom: 2.4px solid var(--link);
+        border-radius: 0;
+
     }
 
 }
