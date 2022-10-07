@@ -8,6 +8,9 @@
 
             <div class="animate__animated animate__fadeInUp">
                 <HelloWorldVue></HelloWorldVue>
+
+                <Work></Work>
+
                 <p style="margin-top: 300px">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus error,
                     perspiciatis dolores tenetur itaque alias accusantium cupiditate, modi earum esse provident
                     repellendus
@@ -27,12 +30,14 @@
 
 <script>
 import HelloWorldVue from '@/components/HelloWorld.vue';
+import Work from '@/components/WorkCard.vue'
 import Nav from '@/components/Nav.vue'
 export default {
     name: 'HomePg',
     components: {
         HelloWorldVue,
-        Nav
+        Nav,
+        Work
     }
 }
 </script>
