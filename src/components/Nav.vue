@@ -94,6 +94,7 @@ a.router-link-active {
 
         border: none;
         border-bottom: 2.4px solid var(--link);
+
         border-radius: 0;
 
     }
