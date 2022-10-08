@@ -2,10 +2,20 @@
   <div class="main">
     <Nav></Nav>
     <div class="content animate__animated animate__fadeInUp">
-      <div class="outer">
-        <div class="inner"></div>
+
+      <h1>The developer infrastructure bank</h1>
+
+      <div class="pattern"></div>
+
+      <div class="">
+        <p>hello, This text is supposed to be a cousin of the background-gradient elelment, which will make this text
+          and the pattern to be on separate line, not stack on top like in this case. To achive this result, i didn't
+          use any flex box nor grid, but i used position: absolute for the pattern to make it move to the top of the
+          parrent div. But the parrent div also has to be a positioned element, so i used position: relative because the
+          current flow of the parrent div is already good enough.</p>
+        <div class=""></div>
       </div>
-      <LongText></LongText>
+
     </div>
   </div>
 </template>
@@ -24,47 +34,67 @@ export default {
 </script>
 
 <style scoped>
-.main {
-  padding: 0;
+* {
+  box-sizing: border-box;
   margin: 0;
-  width: 100%;
-  min-height: 100%;
-  height: auto;
-  background-color: var(--bg);
-
-  transition: background-color var(--trans-time-l) ease;
+  color: black;
 }
 
-@media screen and (max-width: 820px) {
-  .main {
-    padding-top: 47px;
-  }
+.outer {
+  position: relative;
+
+  width: 100%;
+  height: 500px;
+
+  background-image: radial-gradient(circle at 84.1% 65.38%, #36D1C7 0%, #B2E0DD 30%, #FFFFFF 100%);
+  border: solid;
+}
+
+.inner {
+  position: absolute;
+  inset: 0;
+
+
+  width: 100%;
+  height: 100%;
+
+  box-sizing: border-box;
+  border: 2px solid green;
+
+  background-image: url(https://column.com/images/guilloche.svg);
+  background-size: 20px;
+  mix-blend-mode: overlay;
+}
+
+.main {
+  width: 100vw;
+  height: 100vh;
 
 
 }
 
 .content {
-  padding: 10px;
+  width: 100%;
+  height: 100%;
+  padding: 0;
   margin: auto;
 
-  box-sizing: border-box;
+  position: relative;
 
-  max-width: 700px;
-  height: fit-content;
-  background-color: inherit;
+  background: radial-gradient(circle at 84.1% 65.38%, #36D1C7 0%, #B2E0DD 30%, #FFFFFF 100%);
 
-  transition: background-color var(--trans-time-l) ease;
 }
 
-.outer {
-  background-color: #7fffd4;
-  width: 80%;
-  height: 500px;
-}
+.pattern {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 100vw;
+  height: 100%;
 
-.inner {
-  background-color: #5f9ea0;
-  width: 60%;
-  height: 350px;
+  background-image: url(https://column.com/images/guilloche.svg);
+  background-size: 20px;
+  mix-blend-mode: overlay;
 }
 </style>
