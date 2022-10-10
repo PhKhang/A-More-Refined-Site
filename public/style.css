@@ -1,7 +1,8 @@
 :root {
-    --trans-time: .2s;
-    --trans-time-l: .4s;
+    --trans-time: .4s;
+    --trans-time-l: .6s;
     --widthchange: 820px;
+    --animate-duration: 650ms;
 
     --green0: #ecfdf5;
     --green1: #d1fae5;
@@ -29,7 +30,6 @@
     --purple: #a82dd1;
     --yellow: #fff565;
 
-    --animate-duration: 200ms;
 }
 
 .light {

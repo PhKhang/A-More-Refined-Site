@@ -1,7 +1,15 @@
 <template>
     <div class="main">
         <Nav></Nav>
+
+
+
         <div class="content ">
+
+            <div id="seccir" class="circle rellax" data-rellax-speed="8"></div>
+            <div class="circle rellax" data-rellax-speed="10"></div>
+            <div class="square rellax" data-rellax-speed="6" style="transform: rotate(45deg);"></div>
+            <div id="secsq" class="square rellax" data-rellax-speed="4" style="transform: rotate(45deg);"></div>
 
             <div class="header animate__animated animate__fadeIn">
                 <img class="rellax img-header" data-rellax-speed="3"
@@ -10,6 +18,7 @@
             </div>
 
             <div class="animate__animated animate__fadeIn">
+
                 <HelloWorldVue></HelloWorldVue>
 
                 <Work></Work>
@@ -59,6 +68,8 @@ export default {
     height: auto;
     background-color: var(--bg);
 
+    overflow-x: hidden;
+
     transition: background-color var(--trans-time-l) ease;
 }
 
@@ -78,9 +89,49 @@ export default {
 
     max-width: 700px;
     height: fit-content;
+    overflow-x: hidden;
     background-color: inherit;
 
     transition: background-color var(--trans-time-l) ease;
+}
+
+.circle {
+    position: absolute;
+    top: 190%;
+    left: 40%;
+
+
+    width: 70%;
+    aspect-ratio: 1/1;
+    background-color: var(--bg-nav);
+    border-radius: 50%;
+}
+
+#seccir {
+    width: 10vw;
+    height: 10vw;
+
+    top: 80%;
+    left: 50%;
+
+}
+
+.square {
+    position: absolute;
+    top: 40%;
+    left: 20%;
+
+    width: 15%;
+    aspect-ratio: 1/1;
+    border-radius: 14%;
+    background-color: var(--bg-nav);
+}
+
+#secsq {
+    width: 30%;
+
+    top: 90%;
+    left: 5%;
 }
 
 .header {
