@@ -41,7 +41,7 @@ export default {
     width: 300px;
     padding: 10px;
     margin: 10px;
-    background-color: var(--dgreen8);
+    background-color: var(--bg-nav);
     border-radius: 20px;
     box-shadow: 0px 0px 18px 3px rgb(0, 0, 0);
 
@@ -72,7 +72,7 @@ export default {
     font-weight: 500;
     font-size: 24px;
 
-    color: white;
+    color: var(--text);
 }
 
 .cardcontent {
@@ -80,6 +80,6 @@ export default {
     font-weight: normal;
     font-size: 18px;
 
-    color: #d1d1d1;
+    color: var(--text);
 }
 </style>

@@ -90,15 +90,16 @@ export default {
     max-width: 700px;
     height: fit-content;
     overflow-x: hidden;
-    background-color: inherit;
+    background-color: transparent;
 
-    transition: background-color var(--trans-time-l) ease;
+
+    transition: background-color var(--trans-time) ease;
 }
 
 .circle {
     position: absolute;
     top: 190%;
-    left: 40%;
+    right: 20%;
 
 
     width: 70%;
@@ -128,7 +129,7 @@ export default {
 }
 
 #secsq {
-    width: 30%;
+    width: 25%;
 
     top: 90%;
     left: 5%;

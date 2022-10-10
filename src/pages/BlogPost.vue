@@ -78,9 +78,8 @@ export default {
 
   max-width: 700px;
   height: fit-content;
-  background-color: inherit;
+  background-color: transparent;
 
-  transition: background-color var(--trans-time-l) ease;
 }
 
 #blog-post {
