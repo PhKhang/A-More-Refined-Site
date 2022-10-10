@@ -68,7 +68,6 @@ export default {
     height: auto;
     background-color: var(--bg);
 
-    overflow-x: hidden;
 
     transition: background-color var(--trans-time-l) ease;
 }
@@ -89,7 +88,6 @@ export default {
 
     max-width: 700px;
     height: fit-content;
-    overflow-x: hidden;
     background-color: transparent;
 
 
