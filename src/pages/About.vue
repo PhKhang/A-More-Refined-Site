@@ -1,7 +1,7 @@
 <template>
     <div class="main">
         <Nav></Nav>
-        <div class="content animate__animated animate__fadeInUp">
+        <div class="content animate__animated animate__fadeIn">
             <LongText></LongText>
         </div>
     </div>

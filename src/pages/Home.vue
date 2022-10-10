@@ -2,11 +2,14 @@
     <div class="main">
         <Nav></Nav>
         <div class="content ">
-            <img v-if="true" class="header animate__animated animate__fadeIn"
-                src="@/assets/papers.co-me89-himalaya-sunset-white-mountain-art-36-3840x2400-4k-wallpaper(Medium).jpg"
-                alt="">
 
-            <div class="animate__animated animate__fadeInUp">
+            <div class="header animate__animated animate__fadeIn">
+                <img class="rellax img-header" data-rellax-speed="3"
+                    src="@/assets/papers.co-me89-himalaya-sunset-white-mountain-art-36-3840x2400-4k-wallpaper(Medium).jpg"
+                    alt="">
+            </div>
+
+            <div class="animate__animated animate__fadeIn">
                 <HelloWorldVue></HelloWorldVue>
 
                 <Work></Work>
@@ -38,6 +41,9 @@ export default {
         HelloWorldVue,
         Nav,
         Work
+    },
+    mounted() {
+        var rellax = new Rellax('.rellax')
     }
 }
 </script>
@@ -77,17 +83,25 @@ export default {
     transition: background-color var(--trans-time-l) ease;
 }
 
-img {
+.header {
+    overflow: hidden;
+
     width: 80vw;
     min-width: 100%;
     height: 200px;
-    object-fit: cover;
-
     border-radius: 6px;
 
     position: relative;
     left: 50%;
     transform: translate(-50%);
+}
+
+.img-header {
+    width: 100%;
+    height: 140%;
+    object-fit: cover;
+
+    object-position: 50% 55%;
 }
 
 a {

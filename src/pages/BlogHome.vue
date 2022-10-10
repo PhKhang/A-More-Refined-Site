@@ -36,7 +36,7 @@ export default {
       <div id="blog-home">
         <h1>{{ page_title }}</h1>
         <!-- Create `v-for` and apply a `key` for Vue. Here we are using a combination of the slug and index. -->
-        <div class="post animate__animated animate__fadeInUp" v-for="(post,index) in posts"
+        <div class="post animate__animated animate__fadeIn" v-for="(post,index) in posts"
           :key="post.slug + '_' + index">
           <router-link :to="'/blog/' + post.slug">
             <article class="media">
