@@ -28,6 +28,7 @@ html {
 
   width: 100%;
   font-family: 'Nunito', 'Noto Sans JP', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 400;
 
   overflow-x: hidden;
 }
