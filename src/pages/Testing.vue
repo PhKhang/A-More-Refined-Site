@@ -91,6 +91,7 @@ export default {
   grid-template-rows: 1fr;
 
   filter: blur(50px);
+  transition: all .8s ease;
 }
 
 .blur-bg>* {
