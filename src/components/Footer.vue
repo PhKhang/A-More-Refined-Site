@@ -69,8 +69,10 @@ footer {
     min-height: 100px;
     width: 100%;
 
-    margin: 0;
+    margin-top: 50px;
+    padding-top: 4px;
     text-align: center;
+    font-size: 15px;
 
     transition: all 0.8s ease;
 
@@ -80,6 +82,10 @@ footer {
         align-items: center;
         gap: 5px;
     }
+}
+
+h3 {
+    margin: 15px 0 0 0;
 }
 
 footer img {
