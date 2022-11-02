@@ -35,11 +35,14 @@ export default {
     <div class="content">
       <div id="blog-home">
         <h1>{{ page_title }}</h1>
+
+
         <!-- Create `v-for` and apply a `key` for Vue. Here we are using a combination of the slug and index. -->
         <div class="post animate__animated animate__fadeIn" v-for="(post,index) in posts"
           :key="post.slug + '_' + index">
           <router-link :to="'/blog/' + post.slug">
             <article class="media">
+
               <figure>
                 <!-- Bind results using a `:` -->
                 <!-- Use a `v-if`/`else` if there is a `featured_image` -->
@@ -48,9 +51,12 @@ export default {
               </figure>
               <h2>{{ post.title }}</h2>
               <p>{{ post.summary }}</p>
+
             </article>
           </router-link>
         </div>
+
+
       </div>
     </div>
   </div>

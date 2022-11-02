@@ -23,20 +23,11 @@
 
                 <Work></Work>
 
-                <p style="margin-top: 300px">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus error,
-                    perspiciatis dolores tenetur itaque alias accusantium cupiditate, modi earum esse provident
-                    repellendus
-                    laboriosam explicabo voluptates dicta! Deleniti culpa omnis similique, labore ea id sed, nostrum
-                    laboriosam voluptatem expedita magni adipisci! Autem, quas libero cupiditate architecto distinctio
-                    repellendus voluptatem numquam illum aspernatur totam at tempore ad velit, fuga ab inventore odio
-                    minus
-                    saepe fugit sit culpa error molestias doloremque provident? Laboriosam totam deserunt quis nam,
-                    voluptatibus autem minima! Maxime asperiores, natus alias labore fugiat cumque aperiam
-                    necessitatibus,
-                    laudantium delectus minima perferendis corporis nemo numquam perspiciatis quam soluta exercitationem
-                    nobis eveniet totam!</p>
+            
             </div>
         </div>
+
+        <Footer></Footer>
     </div>
 </template>
 
@@ -44,12 +35,14 @@
 import HelloWorldVue from '@/components/HelloWorld.vue';
 import Work from '@/components/WorkCard.vue'
 import Nav from '@/components/Nav.vue'
+import Footer from '@/components/Footer.vue'
 export default {
     name: 'HomePg',
     components: {
         HelloWorldVue,
         Nav,
-        Work
+        Work,
+        Footer
     },
     mounted() {
         var rellax = new Rellax('.rellax')
@@ -100,7 +93,7 @@ export default {
     right: 20%;
 
 
-    width: 70%;
+    width: 50%;
     aspect-ratio: 1/1;
     background-color: var(--bg-nav);
     border-radius: 50%;

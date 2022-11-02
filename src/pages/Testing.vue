@@ -11,19 +11,21 @@
         </div>
 
         <div class="svg animate__animated animate__fadeIn">
-          <Svg class="mandala"></Svg>
+          <div class="svg-con">
+            <Svg class="mandala"></Svg>
+          </div>
         </div>
 
         <div class="blur-bg">
-          <img src="../../public/Vector.svg" alt="">
+          <!-- <img src="../../public/Vector.svg" alt="">
           <img src="../../public/Vector-1.svg" alt="">
-          <img src="../../public/Vector-2.svg" alt="">
+          <img src="../../public/Vector-2.svg" alt=""> -->
         </div>
 
       </div>
 
-      <div class="block">
-
+      <div class="block web-show">
+        <Work></Work>
       </div>
 
     </div>
@@ -34,13 +36,15 @@
 import Nav from '@/components/Nav.vue'
 import LongText from '@/components/LongText.vue'
 import Svg from '@/components/Svg.vue'
+import Work from '@/components/WorkCard.vue'
 
 export default {
   name: 'TestPg',
   components: {
     Nav,
     LongText,
-    Svg
+    Svg,
+    Work
   }
 }
 </script>
@@ -62,10 +66,14 @@ export default {
 
 .block {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   overflow: inherit;
   border: solid;
   background-color: transparent;
+}
+
+.filler {
+  height: 50vh;
 }
 
 .header {
@@ -73,6 +81,8 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  z-index: 0;
 }
 
 .blur-bg {
@@ -99,13 +109,37 @@ export default {
   grid-row: 1/2;
 
   margin: 0 auto;
+  z-index: -2;
 }
 
 .svg {
+  width: 100%;
+  height: 100%;
   position: absolute;
-  left: 50%;
-  bottom: -170%;
-  transform: translateX(-50%);
   z-index: -1;
+  overflow: visible;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.svg-con {
+  width: 100%;
+  height: 100%;
+  overflow-x: clip;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.mandala {
+  transform: translate(3);
+}
+
+.web-show {
+  position: relative;
+  z-index: 1;
 }
 </style>

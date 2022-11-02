@@ -95,4 +95,5 @@ export default {
         transform: rotate(360deg);
     }
 }
+
 </style>
