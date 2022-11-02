@@ -12,7 +12,7 @@ const router = createRouter({
     routes: [
         {
             path: '/',
-            component: Home,
+            component: Testing,
         },
         
         {
@@ -26,7 +26,7 @@ const router = createRouter({
         },
         {
             path: '/test',
-            component: Testing
+            component: Home
         },
         {
             path: '/blog/',

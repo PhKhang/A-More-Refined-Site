@@ -7,6 +7,8 @@
 
         <div class="text">
           <h1>Hello there</h1>
+          <h2>I'm Phuc Khang</h2>
+          <h2>and I like to build stuffs.</h2>
 
         </div>
 
@@ -49,7 +51,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .main {
   background: linear-gradient(28deg, var(--bg), rgba(9, 32, 30, 1) 100%);
 }
@@ -83,6 +85,10 @@ export default {
   justify-content: center;
 
   z-index: 0;
+
+  h1, h2 {
+    margin: 0 15px;
+  }
 }
 
 .blur-bg {
@@ -122,6 +128,8 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
+
+
 }
 .svg-con {
   width: 100%;
@@ -132,11 +140,22 @@ export default {
   justify-content: center;
   align-items: center;
   
+  transform: scale(1);
 }
 
-.mandala {
-  transform: translate(3);
+@media screen and (max-width: 820px) {
+  .svg {
+    overflow: hidden;
+  }
+
+  .svg-con {
+    position: absolute;
+    top: -40%;
+    width: 1000px;
+  }
 }
+
+
 
 .web-show {
   position: relative;
