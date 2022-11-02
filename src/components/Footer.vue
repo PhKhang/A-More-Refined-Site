@@ -3,6 +3,19 @@
     <div class="content">
        
         <p class="made">Made with love 💖, sweat 😓 and anxiety✨</p>
+
+        <div class="social-i">
+            <a href="https://github.com/PhKhang" target="_blank">
+                <box-icon type='logo' name='github' color="var(--text)"></box-icon>
+            </a>
+            <a href="https://twitter.com/PKhang0" target="_blank">
+                <box-icon name='twitter' type='logo' color="var(--text)"></box-icon>
+            </a>
+            <a href="https://www.facebook.com/PhKhng/" target="_blank">
+                <box-icon name='facebook-square' type='logo' color="var(--text)"></box-icon>
+            </a>
+        </div>
+
         <h3>Powered by</h3>
         <div class="spon">
        
@@ -40,7 +53,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .content {
     padding: 10px;
     margin: auto;
@@ -60,6 +73,13 @@ footer {
     text-align: center;
 
     transition: all 0.8s ease;
+
+    .social-i {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+    }
 }
 
 footer img {
