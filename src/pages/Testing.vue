@@ -31,6 +31,8 @@
       </div>
 
     </div>
+    
+    <Footer></Footer>
   </div>
 </template>
 
@@ -39,6 +41,7 @@ import Nav from '@/components/Nav.vue'
 import LongText from '@/components/LongText.vue'
 import Svg from '@/components/Svg.vue'
 import Work from '@/components/WorkCard.vue'
+import Footer from '@/components/Footer.vue'
 
 export default {
   name: 'TestPg',
@@ -46,7 +49,8 @@ export default {
     Nav,
     LongText,
     Svg,
-    Work
+    Work,
+    Footer
   }
 }
 </script>
@@ -57,7 +61,7 @@ export default {
 }
 
 .content {
-  font-size: 60px;
+  font-size: 50px;
 }
 
 @media screen and (max-width: 820px) {
