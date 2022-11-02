@@ -96,10 +96,17 @@ footer img {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 5px;
+    gap: 0px;
 }
 
 a {
     text-decoration: none;
+}
+
+@media screen and (max-width: 420px)  {
+    .spon{
+        display: flex;
+        justify-content: space-between;
+    }
 }
 </style>

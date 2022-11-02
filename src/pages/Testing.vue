@@ -89,7 +89,7 @@ span {
   background-color: transparent;
 
   h2 {
-    width: 680px;
+    max-width: 680px;
     margin: auto;
   }
 }

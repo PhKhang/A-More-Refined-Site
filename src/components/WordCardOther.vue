@@ -49,7 +49,10 @@ export default {
     justify-items: center;
     /* justify-content: center; */
     transition: all .2s ease-in-out;
+
 }
+.card:hover { transform: scale(1.08); }
+
 
 /* .card:hover {
     transform: scale(1.08);

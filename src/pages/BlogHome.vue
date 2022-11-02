@@ -128,8 +128,4 @@ figure {
 }
 
 
-footer {
-  position: absolute;
-  bottom: 0;
-}
 </style>
