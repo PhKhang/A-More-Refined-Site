@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "@vueuse/core": "^9.2.0",
+    "boxicons": "^2.1.4",
     "buttercms": "^1.2.9",
     "primevue": "^3.17.0",
     "vue": "^3.2.13",

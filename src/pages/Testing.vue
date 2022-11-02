@@ -7,8 +7,13 @@
 
         <div class="text">
           <h1>Hello there</h1>
-          <h2>I'm Phuc Khang</h2>
+          <h2>I'm <span>Phuc Khang</span></h2>
           <h2>and I like to build stuffs.</h2>
+          <div class="icon">
+            <box-icon type='logo' name='vuejs' size='lg' color="var(--text)"></box-icon>
+            <box-icon name='c-plus-plus' type='logo' size='lg' color="var(--text)"></box-icon>
+            <box-icon name='python' type='logo' size='lg' color="var(--text)" ></box-icon>
+          </div>
 
         </div>
 
@@ -27,7 +32,13 @@
       </div>
 
       <div class="block web-show">
+        <h2>These are the sites I've built over time</h2>
         <Work></Work>
+      </div>
+      
+      <div class="block web-show">
+        <h2>And these are projects I've made with other languages</h2>
+        <WorkOther></WorkOther>
       </div>
 
     </div>
@@ -41,7 +52,9 @@ import Nav from '@/components/Nav.vue'
 import LongText from '@/components/LongText.vue'
 import Svg from '@/components/Svg.vue'
 import Work from '@/components/WorkCard.vue'
+import WorkOther from '@/components/WordCardOther.vue'
 import Footer from '@/components/Footer.vue'
+import 'boxicons'
 
 export default {
   name: 'TestPg',
@@ -50,32 +63,35 @@ export default {
     LongText,
     Svg,
     Work,
-    Footer
+    Footer,
+    WorkOther
   }
 }
 </script>
 
 <style scoped lang="scss">
+span {
+  font-style: italic;
+}
 .main {
-  background: linear-gradient(28deg, var(--bg), rgba(9, 32, 30, 1) 100%);
+  background: linear-gradient(28deg, var(--bg), var(--bg) 100%);
 }
 
 .content {
-  font-size: 50px;
+  font-size: 26px;
 }
 
-@media screen and (max-width: 820px) {
-  .content {
-    font-size: 30px;
-  }
-}
 
 .block {
   width: 100%;
   min-height: 100vh;
   overflow: inherit;
-  border: solid;
   background-color: transparent;
+
+  h2 {
+    width: 680px;
+    margin: auto;
+  }
 }
 
 .filler {
@@ -90,8 +106,14 @@ export default {
 
   z-index: 0;
 
+  font-size: 50px;
+
   h1, h2 {
     margin: 0 15px;
+  }
+  
+  .icon {
+    margin-top: 10px;
   }
 }
 
@@ -145,7 +167,9 @@ export default {
   align-items: center;
   
   transform: scale(1);
+  filter: opacity(.4);
 }
+
 
 @media screen and (max-width: 820px) {
   .svg {
@@ -164,5 +188,16 @@ export default {
 .web-show {
   position: relative;
   z-index: 1;
+
+  padding: 20px;
+}
+
+@media screen and (max-width: 820px) {
+  .content {
+    font-size: 20px;
+  }
+  .header {
+    font-size: 30px;
+  }
 }
 </style>

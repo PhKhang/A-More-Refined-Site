@@ -52,12 +52,14 @@ export default {
     background-color: transparent;
 }
 footer {
-    background-color: var(--dgreen8);
+    background-color: var(--bg-nav);
     min-height: 100px;
     width: 100%;
 
     margin: 0;
     text-align: center;
+
+    transition: all 0.8s ease;
 }
 
 footer img {

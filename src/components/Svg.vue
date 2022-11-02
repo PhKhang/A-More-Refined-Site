@@ -72,6 +72,8 @@ export default {
     animation: rotate 500s linear infinite;
     width: 1900px;
     font-size: 16px;
+
+    pointer-events: none;
 }
 
 .mandala.animate__animated.animate__fadeIn {

@@ -68,7 +68,8 @@ export default {
 }
 
 .cardtitle {
-    margin: 0 1.33rem .33rem 1.33rem;
+    margin: 0;
+    margin-bottom: 6px;
     font-weight: 500;
     font-size: 24px;
 
@@ -76,9 +77,10 @@ export default {
 }
 
 .cardcontent {
-    margin: .33rem 1.33rem .33rem 1.33rem;
+    margin: 0;
     font-weight: normal;
     font-size: 18px;
+    text-align: justify;
 
     color: var(--text);
 }

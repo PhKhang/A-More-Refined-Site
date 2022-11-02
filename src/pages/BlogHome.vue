@@ -1,11 +1,13 @@
 <script>
 import { butter } from '@/buttercms'
 import Nav from '@/components/Nav.vue'
+import Footer from '@/components/Footer.vue'
 
 export default {
   name: 'blog-home',
   components: {
-    Nav
+    Nav,
+    Footer
   },
   data() {
     return {
@@ -59,6 +61,8 @@ export default {
 
       </div>
     </div>
+
+    <Footer></Footer>
   </div>
 </template>
 
@@ -121,5 +125,11 @@ export default {
 
 figure {
   margin: 0;
+}
+
+
+footer {
+  position: absolute;
+  bottom: 0;
 }
 </style>
