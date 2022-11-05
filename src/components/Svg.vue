@@ -86,7 +86,7 @@ export default {
         -moz-transform: rotate(0deg);
         -webkit-transform: rotate(0deg);
         -o-transform: rotate(0deg);
-        transform: rotate(0deg);
+        transform: rotate(0deg) translate(0);
     }
 
     to {
@@ -94,7 +94,7 @@ export default {
         -moz-transform: rotate(360deg);
         -webkit-transform: rotate(360deg);
         -o-transform: rotate(360deg);
-        transform: rotate(360deg);
+        transform: rotate(360deg) translate(0);
     }
 }
 
